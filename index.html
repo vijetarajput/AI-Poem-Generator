@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../src/style.css" rel="stylesheet" type="text/css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Poem Generator</title>
 </head>
 
@@ -14,28 +15,12 @@
             <h1>Welcome to AI poem genrator</h1>
         </header>
         <main>
-            <form>
+            <form id="form">
                 <input class="input" type="text" placeholder="Enter the topic for the poem" autofocus required
                     autocomplete="off" />
                 <input class="submit-button" type="submit" value="Submit" />
             </form>
-            <div class="poem">
-                Better than Heaven or Arcadia
-                I love thee, O my India!
-                And thy love I shall give
-                To every brother nation that lives.
-                God made the Earth;
-                Man made confining countries
-                And their fancy-frozen boundaries.
-                But with unfound boundless love
-                I behold the borderland of my India
-                Expanding into the World.
-                Hail, mother of religions, lotus, scenic beauty,and sages!
-                Thy wide doors are open,
-                Welcoming God's true sons through all ages.
-                Where Ganges, woods, Himalayan caves, and
-                men dream God -
-                I am hallowed; my body touched that sod.
+            <div class="poem" id="poem">
             </div>
         </main>
         <script src="../src/index.js"></script>
