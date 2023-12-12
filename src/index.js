@@ -17,7 +17,7 @@ function generatePoem(event)
 
     let apiKey = "03ob4taaa6f366304d608c02ae4ad453";
     let prompt = `User instructions are: Generate an english poem about ${input.value}`;
-    let context = "You are a great poem expert and love to write short and sweet poems. Your mission is to generate 6-10 lines maximum poem in basic HTML. Make sure to follow user instructions.< Make sure the title or the heading of the poem comes under <h1></h1>";
+    let context = "You are a great poem expert and love to write short and sweet poems. Your mission is to generate poem maximum of 6-10 lines in basic HTML. Make sure to follow user instructions. Make sure the title or the heading of the poem comes under <h1></h1>";
     let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
     axios.get(apiUrl).then(displayPoem);
 
